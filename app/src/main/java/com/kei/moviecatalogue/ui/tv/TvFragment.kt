@@ -12,6 +12,7 @@ import com.kei.moviecatalogue.R
 import com.kei.moviecatalogue.adapter.PopularTvAdapter
 import com.kei.moviecatalogue.model.tv.TvPopularItemResponse
 import kotlinx.android.synthetic.main.fragment_movie.*
+import kotlinx.android.synthetic.main.fragment_tv.*
 
 class TvFragment : Fragment() {
     private lateinit var popularTvAdapter: PopularTvAdapter

@@ -42,19 +42,19 @@ class MovieFragment : Fragment() {
     }
 
     private fun getInitUpcoming(movieUpcoming: List<UpcomingResponse>) {
-        rv_upcoming_tv.apply {
+        rv_upcoming_movie.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, true)
             upcomingMovieAdapter = UpcomingMovieAdapter(movieUpcoming)
-            rv_upcoming_tv.adapter = upcomingMovieAdapter
+            rv_upcoming_movie.adapter = upcomingMovieAdapter
         }
     }
 
     private fun getInitPopular(popularMovie: List<MovieItemResponse>) {
         //live data = asyncronus method
-        rv_popular_tv.apply {
+        rv_popular_movie.apply {
             layoutManager =  LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, true)
             popularMovieAdapter = PopularMovieAdapter(popularMovie)
-            rv_popular_tv.adapter = popularMovieAdapter
+            rv_popular_movie.adapter = popularMovieAdapter
         }
     }
 }
