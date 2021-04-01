@@ -8,7 +8,7 @@ data class TvPopularItemResponse (
     @SerializedName("popularity")
     val popularity:Double,
     @SerializedName("original_language")
-    val original_language:Double,
-    @SerializedName("name", alternate = ["name"])
+    val original_language:String,
+    @SerializedName("name")
     val name:String
 )

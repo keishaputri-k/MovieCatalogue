@@ -17,7 +17,7 @@ interface ApiService {
             @Query("api_key") apiKey : String,
             @Query("page") page : Int
     ): retrofit2.Call<MovieUpcomingItemResponse>
-    @GET ("tv/Popular")
+    @GET ("tv/popular")
     fun getTvPopular(
         @Query("api_key") apiKey : String,
         @Query("page") page : Int
