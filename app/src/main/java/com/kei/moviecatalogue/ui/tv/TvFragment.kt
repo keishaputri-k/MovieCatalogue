@@ -20,9 +20,7 @@ class TvFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val root = inflater.inflate(R.layout.fragment_tv, container, false)
-        tvViewModel =
-            ViewModelProvider(this).get(TvViewModel::class.java)
-
+        tvViewModel = ViewModelProvider(this).get(TvViewModel::class.java)
         tvViewModel.init(1)
         tvViewModel.getTvPopularData().observe(viewLifecycleOwner, Observer { tvPopular -> getInitTvPopular(tvPopular)})
         return root

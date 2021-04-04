@@ -7,8 +7,6 @@ data class TvPopularItemResponse (
     val poster_path:String,
     @SerializedName("popularity")
     val popularity:Double,
-    @SerializedName("original_language")
-    val original_language:String,
     @SerializedName("name")
     val name:String
 )

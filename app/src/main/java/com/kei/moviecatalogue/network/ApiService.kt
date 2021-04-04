@@ -3,6 +3,8 @@ package com.kei.moviecatalogue.network
 import com.kei.moviecatalogue.model.movie.MovieUpcomingItemResponse
 import com.kei.moviecatalogue.model.movie.PopularResponse
 import com.kei.moviecatalogue.model.tv.TvPopularResponse
+import com.kei.moviecatalogue.model.tv.TvTopRatedItemResponse
+import com.kei.moviecatalogue.model.tv.TvTopRatedResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -22,4 +24,9 @@ interface ApiService {
         @Query("api_key") apiKey : String,
         @Query("page") page : Int
     ): retrofit2.Call<TvPopularResponse>
+    @GET ("tv/top_rated")
+    fun getTvTopRated(
+            @Query("api_key") apiKey : String,
+            @Query("page") page : Int
+    ): retrofit2.Call<TvTopRatedResponse>
 }
