@@ -4,9 +4,9 @@ import com.google.gson.annotations.SerializedName
 
 data class TvTopRatedResponse(
 	@SerializedName("page")
-	val page: Int? = null,
+	val page: Int,
 	@SerializedName("results")
-	val results: List<TvTopRatedItemResponse?>? = null
+	val results: ArrayList<TvTopRatedItemResponse>
 )
 
 

@@ -6,8 +6,8 @@ data class TvTopRatedItemResponse(
         @field:SerializedName("overview")
         val overview: String? = null,
 
-        @field:SerializedName("original_language")
-        val originalLanguage: String? = null,
+        @field:SerializedName("first_air_date")
+        val firstAirDate: String? = null,
 
         @field:SerializedName("poster_path")
         val posterPath: String? = null,

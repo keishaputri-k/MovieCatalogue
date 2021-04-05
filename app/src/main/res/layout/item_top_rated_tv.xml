@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="@dimen/_16dp"
+    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -24,6 +25,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:text="@string/txt_title"
+        android:textColor="@color/main"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,6 +44,7 @@
         android:maxWidth="230dp"
         android:maxLines="4"
         android:text="@string/txt_description"
+        android:textColor="@color/text"
         app:layout_constraintBottom_toTopOf="@+id/tv_date_top_rated"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -56,6 +59,7 @@
         android:layout_marginStart="16dp"
         android:text="@string/txt_12_04_2021"
         android:textSize="@dimen/_10sp"
+        android:textColor="@color/secondary"
         app:layout_constraintBottom_toBottomOf="@+id/iv_top_rated"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
